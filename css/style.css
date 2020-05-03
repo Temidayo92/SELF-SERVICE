@@ -1,0 +1,32 @@
+body
+{
+background-image: url("../images/skyscraper.jpg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+.landing #main {
+    padding-top: 70px;
+}
+#main {
+    background-color: #EEEEEE;
+    color: #333;
+    font-size: 17px;
+    padding: 40px 0 100px;
+}
+.main-container {
+    padding-top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imagesize{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.button1{
+    margin-bottom: 5px;
+}
