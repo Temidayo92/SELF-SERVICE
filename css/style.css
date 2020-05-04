@@ -3,6 +3,7 @@ body
 background-image: url("../images/skyscraper.jpg.jpg");
 background-size: cover;
 background-repeat: no-repeat;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .landing #main {
     padding-top: 70px;
@@ -30,3 +31,40 @@ background-repeat: no-repeat;
 .button1{
     margin-bottom: 5px;
 }
+.btn{
+    border-radius: 50px;
+}
+.social {
+    background: #d91f28;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(0%,-55%);
+    -moz-transform: translate(0%,-55%);
+    -ms-transform: translate(0%,-55%);
+    -o-transform: translate(0%,-55%);
+    transform: translate(0%,-55%);
+    left: 0;
+    z-index: 30;
+    -moz-box-shadow: 0px 15px 50px 0px rgba(102,102,102,0.1);
+    -webkit-box-shadow: 0px 15px 50px 0px rgba(102,102,102,0.1);
+    box-shadow: 0px 15px 50px 0px rgba(102,102,102,0.1);
+}
+
+.social li a {
+    border-radius: 0px;
+    padding: 12px;
+    font-size: 12px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+
+.whatsapp {
+    position: fixed;
+    left: 4vh;
+    bottom: 4vh;
+    z-index: 100;
+}
+
