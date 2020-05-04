@@ -5,16 +5,15 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style2.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="images/sterling-logo3.png" width="100" height="50" alt="">
+      <img src="../images/sterling-logo3.png" width="100" height="50" alt="">
     </a>
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
@@ -30,23 +29,56 @@
 <div class="main-container">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-4" style="background-color: white; border-radius: 20px;">
+            <div class="col-5" style="background-color: white;border-radius: 20px; ">
                 <br></br>
-                    <div class="form-group">
-                        <br></br>
-                      <label for="exampleDropdownFormEmail2">STERLING ACCOUNT NUMBER (NUBAN)</label>
-                      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
-                    </div>
-                    <div class="form-group form-colour">
-                      <label for="exampleDropdownFormPassword2">BVN NUMBER</label>
-                      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
-                    </div>
-                    <div class="form-group">
-                      <br></br>
-                    </div>
-                    <a href="../customer/subdetails/upgrade.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">SUBMIT </a>
+                <div class="form-group">
+                    <label>Choose your account upgrade Tier</label>
+                    <span style="color: red"><small><i class="text-bold">(Please note that you can only upload a file of maximum size 1mb.)</i></small></span>
+                </div>
+                <br>
+                <div class="checkbox">
+                                    
+                    <span class="radio"><input id="radGtcT3" type="radio" name="AccountTier" value="radGtcT3" checked="checked"><label for="radGtcT3">Kiakaia to standard savings</label></span>
                     
-            
+                </div>
+                <br>
+                <div id="oneTimePswdBox" class="form-group">
+                    <input type="submit" name="btnGenerateOTP" value="Generate OneTime Token" id="btnGenerateOTP">
+                    <br>
+                    <span style="color: red"><h6>(Please note that the OTP will be sent to your phone number and email address registered with us.)</h6></span>
+                    <br></br>
+                    <label for="">Enter one-time password (OTP)</label>
+                    <br>
+                    <input name="txtUssD_OTP" type="text" maxlength="10" id="txtUssD_OTP" class="form-control">
+                </div>
+                <br>
+                <label for="">Means of Identification</label>
+                <select class="custom-select">
+                    <option selected>Open this select menu</option>
+                    <option value="1">National Id Card</option>
+                    <option value="2">International Passport</option>
+                    <option value="3">Voter's Card</option>
+                    <option value="4">Driver's License</option>
+                </select>
+                <br></br>
+                <label for="">Regulatory ID Number</label>
+                <input name="TxtIdNumber" type="text" id="TxtIdNumber" class="form-control">
+                <br></br>
+                <label for="">Regulatory ID Expiry</label>
+                <input name="TxtIdExpiry" type="date" id="TxtIdExpiry" class="form-control">
+                <br>
+                <label for="">Upload Regulatory ID</label>
+                <br>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                  <br></br>
+                  <a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Submit </a>
+                  <br></br>
+
+                
+
 
 
 
@@ -55,13 +87,14 @@
             </div>
             <div class="col-4">
                    
-                    <img class="imagesize" src="images/ussd.jpg">
+                    <img class="imagesize" src="../../customer/images/Sterling_IMG-002.jpg">
                     <br></br>
                          <div>
-                            <a href="../index.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Back to Sterling Self Service Home</a>
+                            <a href="../../index.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Back to Sterling Self Service Home</a>
                         </div>
                 
             </div>
+            
         </div>
 
     </div>
@@ -78,6 +111,7 @@
     <br></br>
     <a href="https://api.whatsapp.com/send?phone=2349060006449&amp;text=hello" target="_blank" class="whatsapp" rel="noopener noreferrer"> <noscript><img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" alt="whatsapp"></noscript><img class=" lazyloaded" src="https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" data-src="https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" alt="whatsapp"> </a>
     <br></br>
+    
     
 
 
