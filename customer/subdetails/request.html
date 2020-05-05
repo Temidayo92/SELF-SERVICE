@@ -5,15 +5,16 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style2.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="images/sterling-logo3.png" width="100" height="50" alt="">
+    <a class="navbar-brand" href="../../index.html">
+      <img src="../images/sterling-logo3.png" width="100" height="50" alt="">
     </a>
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
@@ -29,24 +30,60 @@
 <div class="main-container">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-6">
-                <ul class="">
+            <div class="col-6" style="background-color: white; border-radius: 20px;">
+                <br></br>
+                <h3 style="text-align: center; font-size: 40px; font-weight: bold; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Account block and unblock</h3>
+                <br></br>
+                <br></br>
+                <div class="form-group">
+                    <label for="account-number">Sterling Account Number (NUBAN)</label>
+                
+                      <input name="txtNuban" type="text" value="" maxlength="10" id="txtNuban" disabled="disabled" class="form-control">
+                </div>
+                <br></br>
+                <div class="form-group">	
+                    <label for="account-number">SELECT AN OPTION</label>															
+                    <select class="custom-select">
+                        <option selected>Select An Option</option>
+                        <option value="1">Account Blocking</option>
+                        <option value="2">Account Unblocking</option>
+                    </select>
+                    <br></br>   
+                </div>   
+                <div class="form-group">
+                    <label for="account-number">REASON FOR UNBLOCKING/BLOCKING</label>
+                    <select class="custom-select">
+                        <option selected>Select Reason for Action</option>
+                        <option value="1">Suspected Fraud</option>
+                        <option value="2">Others</option>
+                    </select>
                     <br></br>
-                    <li>
-                        <a href="#" class="btn btn-danger btn-lg active button2" role="button" aria-pressed="true">Account Upgrade      </a>
-                    </li>
+                    <div id="divOthers" class="form-group">
+                        <label for="token-code">Others</label>
+                          <input name="txtOthers" type="text" maxlength="30" id="txtOthers" class="form-control">
+                    </div>
                     <br></br>
-
-                    <li><a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Account Update       </a></li>
-                    <br></br>
-
-                    <li><a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Account block & Unblock</a></li>
+                    <div class="form-group">
+                        <label for="token-code">SMS one-time password (OTP)</label>
+                        <input name="txtTokenCode" type="text" maxlength="6" id="txtTokenCode" class="form-control">
+                        <input type="submit" name="btnGenerateOTP" value="Generate OneTime Token" id="btnGenerateOTP">
+                    </div>
                     <br></br>
                     
-                    <li><a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Dispute management   </a></li>
-                    <br></br>
                     
-                </ul>
+                    
+
+
+
+
+                </div>
+                <br></br>
+                <a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Submit </a>
+                <br></br>                            
+                                            
+                                            
+                                    								
+                
 
 
 
@@ -55,7 +92,11 @@
             </div>
             <div class="col-4">
                    
-                    <img class="imagesize" src="images/ussd.jpg">
+                    <img class="imagesize" src="../images/Sterling_IMG-010.jpg">
+                    <br></br>
+                         <div>
+                            <a href="../../index.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Back to Sterling Self Service Home</a>
+                        </div>
                 
             </div>
         </div>
@@ -71,8 +112,9 @@
         </ul>
         </div>	
     </div>
+    <br></br>
     <a href="https://api.whatsapp.com/send?phone=2349060006449&amp;text=hello" target="_blank" class="whatsapp" rel="noopener noreferrer"> <noscript><img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" alt="whatsapp"></noscript><img class=" lazyloaded" src="https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" data-src="https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://sterling.ng/wp-content/uploads/2020/02/whatsapp-chat-1.png" alt="whatsapp"> </a>
-    
+    <br></br>
     
 
 
